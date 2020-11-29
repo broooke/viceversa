@@ -20,4 +20,5 @@ from viceversa import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
+    path('reversed/', views.reverse, name='reverse'),
 ]

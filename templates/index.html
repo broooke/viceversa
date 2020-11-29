@@ -5,9 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-    <h2>ViceVersa</h2>
-    <textarea cols="30" rows="15"></textarea>
-    <br>
-    <input type="submit" value="Reverse!">
+    <form action="{% url 'reverse' %}">
+        <h2>ViceVersa</h2>
+        <textarea cols="30" rows="15" name="usertext"></textarea>
+        <br>
+        <input type="submit" value="Reverse!">
+    </form>
 </body>
 </html>
